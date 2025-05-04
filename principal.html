@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laranja ultraforte</title>
+    <style>
+        body {
+            background-color: rgba(255, 166, 0, 0.644);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .carta {
+            text-align: center; 
+        }
+
+        .carta img {
+            max-width: 60%; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        .botao {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #textoEscondido {
+            display: none;
+            margin-top: 15px;
+            font-size: 18px;
+            color:purple;
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        .buque {
+            margin-top: 20px;
+        }
+
+        .linkBuque {
+            text-decoration: none; /* Remove o sublinhado padrão do link */
+        }   
+    </style>
+</head>
+<body>
+    <div class="principal">
+    <div class="carta">
+        <img src="carta.png" alt="">
+        <button class="botao" onclick="mostrarTexto()">Olá, abre a cartinha aqui!</button>
+        <div id="textoEscondido">oi meu bem, queria te contar algumas coisinhas :)  
+
+            eu tenho uma playlist chamada "um dia" e nela eu colocava as músicas que um dia eu dedicaria à alguém que realmente significasse muito pra mim. o engraçado é que agora as músicas dessa playlist e a lista de músicas que me lembram você acabaram se tornando uma mesma coisa. 
+        </br>
+            eu te admirei de longe o ano inteiro e acho que nenhum deus saberia explicar o quanto eu desejava te conhecer de pertinho. mesmo com minha admiração inicial, você conseguiu me surpreender com seu jeitinho de ser. jeitinho que eu adoro. jeitinho que eu quero proteger de tudo que tente tirar ele de ti. 
+        </br>
+            voce é minha notificação mais esperada. meu abraço mais desejado. o ponto da minha vida onde tudo parece se acalmar. lugarzinho que eu consigo parar para respirar. teu sinônimo é lar. é amor. cada pedaço da minha alma grita o quanto ama a tua. 
+        </br>
+            você faz eu me sentir laranja ultraforte. ultra. 
+        </br>
+            e sabe a teoria do buquê hipotético que a lalay falou? bem, eu não tinha exatamente flores, mas adapto tudo no meu jeitinho... não foi atoa que te conquistava apresentando meu tcc ;)
+            <div class="buque">
+                <a href="florzinha.html" class="linkBuque">
+                    <button class="botao"> Pegue aqui seu buquê!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script>
+        function mostrarTexto() {
+            var divTexto = document.getElementById('textoEscondido');
+            divTexto.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
